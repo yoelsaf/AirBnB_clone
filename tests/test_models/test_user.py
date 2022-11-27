@@ -1,16 +1,51 @@
 #!/usr/bin/python3
-""" testing User """
+"""
+    test for user
+"""
 import unittest
-import pep8
 from models.user import User
+from models.base_model import BaseModel
 
-class User_testing(unittest.TestCase):
-    """ check BaseModel """
 
-    def testpep8(self):
-        """ testing codestyle """
-        pepstylecode = pep8.StyleGuide(quiet=True)
-        path_user = 'models/user.py'
-        result = pepstylecode.check_files([path_user])
-        self.assertEqual(result.total_errors, 0,
-                         "Found code style errors (and warnings).")
+class test_User(unittest.TestCase):
+    """
+        User class tests
+    """
+    @classmethod
+    def setUpClass(cls):
+        """
+            setup
+        """
+        cls.dummy_user = User()
+        cls.dummy_user.email = "tests@test.com"
+        cls.dummy_user.password = "pass"
+        cls.dummy_user.first_name = "john"
+        cls.dummy_user.last_name = "doe"
+
+    @classmethod
+    def tearDownClass(cls):
+        """
+            tear down
+        """
+        del cls.dummy_user
+
+    def test_inheritance(self):
+        """
+            test proper inheritance
+        """
+        self.assertIsInstance(self.dummy_user, BaseModel)
+        self.assertTrue(hasattr(self.dummy_user, "id"))
+        self.assertTrue(hasattr(self.dummy_user, "created_at"))
+        self.assertTrue(hasattr(self.dummy_user, "updated_at"))
+
+    def test_attrs(self):
+        """
+            test attributes
+        """
+        self.assertTrue(hasattr(self.dummy_user, "email"))
+        self.assertTrue(hasattr(self.dummy_user, "password"))
+        self.assertTrue(hasattr(self.dummy_user, "first_name"))
+        self.assertTrue(hasattr(self.dummy_user, "last_name"))
+
+if __name__ == "__main__":
+    unittest.main()

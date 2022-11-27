@@ -1,112 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-    <link rel="stylesheet" type="text/css" href="styles/8-places.css">
-    <title>AirBnB clone</title>
-    <link rel="shortcut icon" type="image/png" href="images/icon1.png"/>
-  </head>
-  <body>
-    <header>
-      <div class="logo"></div>
-    </header>
-
-    <div class="container">
-      <section class="filters">
-	<div class="locations">
-	  <h3>States</h3>
-	  <h4>California, Arizona..</h4>
-	  <ul class="popover">
-	    <li>
-	      <h2>Arizona:</h2>
-	      <p>Page</p>
-	      <p>Page2</p>
-	      </li>
-	    <li>
-	      <h2 class="California">California:</h2>
-	      <p>San Francisco</p>
-	      <p>Los Angeles</p>
-	      </li>
-	    </ul>
-	  </div>
-	<div class="amenities">
-	  <h3>Amenities</h3>
-	  <h4>Internet, Kitchen..</h4>
-	  <ul class="popover">
-	    <li>
-	      <p>Internet</p>
-	      <p>TV</p>
-	      <p>Kitchen</p>
-	      <p>Iron</p>
-	      </li>
-	    </ul>
-	  </div>
-	<button>
-	  Search
-	  </button>
-      </section>
-    </div>
-
-    <section class="places">
-      <h1>Places</h1>
-
-      <article>
-	<h2>My home</h2>
-	<div class="price_by_night">$10</div>
-	<div class="information">
-	  <div class="max_guest">2 Guests</div>
-	  <div class="number_rooms">1 Bedroom</div>
-	  <div class="number_bathrooms">1 Bathroom</div>
-	  </div>
-	<div class="user"><b>Owner</b>: Bad Bunny</div>
-	<div class="description">
-	  This is a lovely 1 bedroom and 1 bathroom apartment that
-                can accommodate 2 people. It locates at the center of 
-                Shanghai and next to subway line 1,1 stop to People 
-                Square, 2 stops to Bund,  3 stops to Jingan Temple.4
-            </div>
-	</article>
-
-      <article>
-	<h2>Tiny house</h2>
-	<div class="price_by_night">Free</div>
-	<div class="information">
-	  <div class="max_guest">4 Guests</div>
-	  <div class="number_rooms">2 Bedrooms</div>
-	  <div class="number_bathrooms">1 Bathroom</div>
-	  </div>
-	<div class="user"><b>Owner</b>: Bruce Wayne</div>
-	<div class="description">
-	  This is a fake article for fill this section.
-	  It is the personal residence of Bruce Wayne, who is also the superhero Batman. The residence is depicted as a large mansion on the outskirts of Gotham City and is maintained by the Wayne family's butler, Alfred Pennyworth.
-	  </div>
-	</article>
-
-      <article>
-	<h2>A suite</h2>
-	<div class="price_by_night">$180</div>
-	<div class="information">
-	  <div class="max_guest">10 Guest</div>
-	  <div class="number_rooms">4 Bedrooms</div>
-	  <div class="number_bathrooms">3 Bath</div>
-	  </div>
-	<div class="user"><b>Owner</b>: Bishnu My Friend</div>
-	<div class="description">
-	  This is a premium quality room located in the 
-                most important area of New York. It is close to downtown
-                commerces and has a beatiful sight of central park.
-                You will have all the amenities you desire and will 
-                definitely enjoy a great time. 
-                By yourself, with your lover, or your family, you will
-                feel luxury from top to bottom.
-	  </div>
-	</article>
-
-    </section>
-
-    <footer>Holberton School</footer>
-  </body>
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/4-common.css">
+        <link rel="stylesheet" href="./styles/3-header.css">
+        <link rel="stylesheet" href="./styles/3-footer.css">
+        <link rel="stylesheet" href="./styles/6-filters.css">
+        <link rel="stylesheet" href="./styles/8-places.css">
+        <link rel="icon" href="./images/icon.png">
+        <title>AirBnB clone</title>
+</head>
+<body>
+        <header><div class="logo"></div></header>
+        <div class="container">
+                <section class="filters">
+                        <div class="locations">
+                                <h3>States</h3>
+                                <h4>California, Arizona...</h4>
+                                <ul class="popover">
+                                        <li class="popi">
+                                                <h2>
+                                                        Arizona:
+                                                </h2>
+                                                <ul>
+                                                        <li>page</li>
+                                                        <li>page2</li>
+                                                </ul>
+                                        </li>
+                                        <li class="pop">
+                                                <h2>
+                                                        California:
+                                                </h2>
+                                                <ul>
+                                                        <li>Los santos</li>
+                                                        <li>San fierro</li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div class="amenities">
+                                <h3>Amenities</h3>
+                                <h4>Internet, Kitchen...</h4>
+                                <ul class="popover">
+                                        <li>Internet</li>
+                                        <li>TV</li>
+                                        <li>Kitchen</li>
+                                        <li>Iron</li>
+                                </ul>
+                        </div>
+                        <button>Search</button>
+                </section>
+                <section class="places">
+                        <h1>Places</h1>
+                        <article>
+                                <h2>Home Base</h2>
+                                <div class="price_by_night">
+                                        <p>$85</p>
+                                </div>
+                                <div class="information">
+                                        <div class="max_guest">
+                                                <p>2 Wrenchs</p>
+                                        </div>
+                                        <div class="number_rooms">
+                                                <p>The outsider</p>
+                                        </div>
+                                        <div class="number_bathrooms">
+                                                <p>ACID</p>
+                                        </div>
+                                </div>
+                                <div class="user">
+                                        <b>Owner</b>: Reset
+                                </div>
+                                <div class="description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio asperiores aliquid saepe doloribus molestiae nam et natus dolorum illum perferendis impedit architecto eligendi dolores odit tempore reprehenderit, veritatis quaerat. Eos quos deserunt, sapiente nesciunt nihil laborum quibusdam cumque assumenda dolore hic dolor atque omnis accusantium dolores. Perferendis, exercitationem non?
+                                </div>
+                        </article>
+                        <article><h2>Enemy lines</h2>
+                                <div class="price_by_night">
+                                        <p>$85</p>
+                                </div>
+                                <div class="information">
+                                        <div class="max_guest">
+                                                <p>2 Wrenchs</p>
+                                        </div>
+                                        <div class="number_rooms">
+                                                <p>The outsider</p>
+                                        </div>
+                                        <div class="number_bathrooms">
+                                                <p>ACID</p>
+                                        </div>
+                                </div>
+                                <div class="user">
+                                        <b>Owner</b>: Reset
+                                </div>
+                                <div class="description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio asperiores aliquid saepe doloribus molestiae nam et natus dolorum illum perferendis impedit architecto eligendi dolores odit tempore reprehenderit, veritatis quaerat. Eos quos deserunt, sapiente nesciunt nihil laborum quibusdam cumque assumenda dolore hic dolor atque omnis accusantium dolores. Perferendis, exercitationem non?
+                                </div>
+                        </article>
+                        <article><h2>kojimas residence</h2>
+                                <div class="price_by_night">
+                                        <p>$85</p>
+                                </div>
+                                <div class="information">
+                                        <div class="max_guest">
+                                                <p>2 Wrenchs</p>
+                                        </div>
+                                        <div class="number_rooms">
+                                                <p>The outsider</p>
+                                        </div>
+                                        <div class="number_bathrooms">
+                                                <p>ACID</p>
+                                        </div>
+                                </div>
+                                <div class="user">
+                                        <b>Owner</b>: Reset
+                                </div>
+                                <div class="description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio asperiores aliquid saepe doloribus molestiae nam et natus dolorum illum perferendis impedit architecto eligendi dolores odit tempore reprehenderit, veritatis quaerat. Eos quos deserunt, sapiente nesciunt nihil laborum quibusdam cumque assumenda dolore hic dolor atque omnis accusantium dolores. Perferendis, exercitationem non?
+                                </div>
+                        </article>
+                </section>
+        </div>
+        <footer>Holberton School</footer>
+</body>
 </html>
