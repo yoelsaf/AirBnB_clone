@@ -1,27 +1,20 @@
-html, body {
-    height: 100%;
-}
+/*
+ * === Global style ===
+ */
 
+/* Body style */
 body {
-    margin: 0;
-    padding: 0;
-    color: #484848;
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    position: relative;
-    display: flex;
-    flex-flow: column nowrap;
+  color: #484848;
+  font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Container style */
 .container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
-    position: relative;
-    flex: 1 0 auto;
+  margin: 30px auto;
+  max-width: 1000px;
 }
 
-p {
-    text-align: center;
-    vertical-align: middle;
+/* Strong style */
+strong {
+  font-weight: bold;
 }

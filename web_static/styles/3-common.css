@@ -1,24 +1,9 @@
-html, body {
-    height: 100%;
-}
+/*
+ * === Global style ===
+ */
 
+/* Body style */
 body {
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-    color: #484848;
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    text-align: center;
-    vertical-align: middle;
-    color: #484848;
-}
-
-div {
-    flex: 1 0 auto;
+  color: #484848;
+  font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
