@@ -1,121 +1,79 @@
-.places {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: center;
+.places { 
+    max-width: 1000px;
+    margin: 0px auto;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
 }
-.places h1{
-        font-size: 30px;
-        color: inherit;
-        text-align: left;
-        margin-bottom: 0;
-        padding-left: 20px;
-        flex: 100%;
+.places h1 {
+    width: 100%;
+    padding-left: 22px;
 }
 
 .places article {
-        width: 390px;
-        padding: 20px;
-        margin: 20px;
-        border: 1px solid #FF5A5F;
-        border-radius: 4px;
-        display: flex;
-        justify-content:center;
-}
-
-article {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        min-height: 450px;
-        align-content: flex-start;
-        justify-content: center;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid red;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .places article h2 {
-        font-size: 30px;
-        margin-top: 0;
-        margin-left: 10%;
-        margin-bottom: 0%;
-        text-align: center;
-        flex: 1 1 60%;
 
+    font-size: 30px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 30px;
 }
 
-.price_by_night {
-        min-width: 60px;
-        height: 60px;
-        font-size: 30px;
-        color: #FF5A5F;
-        border: 4px solid #FF5A5F;
-        border-radius: 50%;
-        flex: 0 1 10%;
+.places article div.price_by_night {
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    border-radius: 50%;
+    max-width: 80px;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.places article div.information {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    float: left;
+    font-size: 12px;
 }
 
-.price_by_night p {
-        margin-top: 20%;
-        width: 100%;
-        text-align: center;
+div.information div.max_guest, div.information div.number_rooms, div.information div.number_bathrooms {
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 4px auto;
+    text-align: center;
+    line-height: 9em;
+}
+div.information div.max_guest {
+    background-image: url(../images/icon_group.png);
+}
+div.information div.number_rooms {
+    background-image: url(../images/icon_bed.png);
+}
+div.information div.number_bathrooms {
+    background-image: url(../images/icon_bath.png);
 }
 
-.information {
-        display: flex;
-        flex: 1 1 100px;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 5%; /* wait */
-        border-top: 1px solid #DDDDDD;
-        border-bottom: 1px solid #DDDDDD;
-        height: 90px;
-        text-align: center;
-}
-
-.information div {
-        display: flex;
-        background-size: 60%;
-        background-position-x: 20px;
-}
-
-.information div p {
-        /* position: absolute; */
-        display:inline-block;
-        text-align: center;
-        padding-top: 50px;
-        bottom: 0;
-}
-.max_guest {
-        background-image: url("../images/icon_group.png");
-        background-repeat: no-repeat;
-        width: 100px;
-        height: 100%;
-        justify-content: center;
-        /* position: relative; */
-}
-
-.number_rooms {
-        background-image: url("../images/icon_bed.png");
-        background-repeat: no-repeat;
-        width: 100px;
-        height: 100%;
-        justify-content: center;
-        /* position: relative; */
-}
-
-
-.number_bathrooms {
-        background-image: url("../images/icon_bath.png");
-        background-repeat: no-repeat;
-        width: 100px;
-        height: 100%;
-        bottom: 0;
-        /* position: relative; */
-        justify-content: center;
-}
-
-.user {
-        display: flex;
-        margin: 20px 0 5px 0;
-        flex: 1 1 100%;
-        justify-content: flex-start;
+.user, .description {
+    font-size: 14px;
+    margin: 2px 0px;
 }

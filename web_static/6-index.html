@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>AirBnB clone</title>
-
-		<link rel="shortcut icon" href="images/icon.ico" >
-
-		<link rel="stylesheet" href="styles/4-common.css"/>
-		<link rel="stylesheet" href="styles/3-header.css"/>
-		<link rel="stylesheet" href="styles/3-footer.css"/>
-		<link rel="stylesheet" href="styles/6-filters.css"/>
-	</head>
-    <body>
-		<header>
-			<div id="header_logo"></div>
-		</header>
-		<div class="container">
-			<section class="filters">
-				<button>Search</button>
-				<div class="locations">
-					<h3>States</h3>
-					<h4>California, Arizona...</h4>
-					<ul class="popover">
-						<li><h2>Arizona</h2>
-							<ul>
-								<li><h4>Page</h4></li>
-								<li><h4>Page2</h4></li>
-							</ul></li>
-						<li><h2>California</h2>
-							<ul>
-								<li><h4>San Francisco</h4></li>
-								<li><h4>Los Altos</h4></li>
-							</ul></li>
-					</ul>
-				</div>
-				<div class="amenities">
-					<h3>Amenities</h3>
-					<h4>Internet, Kitchen...</h4>
-					<ul class="popover">
-						<li><h4>Internet</h4></li>
-						<li><h4>TV</h4></li>
-						<li><h4>Kitchen</h4></li>
-						<li><h4>Iron</h4></li>
-					</ul>
-				</div>
-
-			</section>
-		</div>
-		<footer>
-			<p>Holberton School</p>
-		</footer>
-	</body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+    <title>AirBnB clone</title>
+    <link rel="shortcut icon" type="image/png" href="images/icon1.png"/>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+    <div class="container">
+      <section class="filters">
+	<div class="locations">
+	  <h3>States</h3>
+	  <h4>California, Arizona..</h4>
+	  <ul class="popover">
+	    <li>
+	      <h2>Arizona:</h2>
+	      <p>Page</p>
+	      <p>Page2</p>
+	      </li>
+	    <li>
+	      <h2 class="California">California:</h2>
+	      <p>San Francisco</p>
+	      <p>Los Angeles</p>
+	      </li>
+	    </ul>
+	  </div>
+	<div class="amenities">
+	  <h3>Amenities</h3>
+	  <h4>Internet, Kitchen..</h4>
+	  <ul class="popover">
+	    <li>
+	      <p>Internet</p>
+	      <p>TV</p>
+	      <p>Kitchen</p>
+	      <p>Iron</p>
+	      </li>
+	    </ul>
+	  </div>
+	<button>
+	  Search
+	  </button>
+      </section>
+    </div>
+    <footer>Holberton School</footer>
+  </body>
 </html>

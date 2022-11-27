@@ -1,48 +1,16 @@
 #!/usr/bin/python3
-"""
-    test city
-"""
-from models.city import City
-from models.state import State
-from models.base_model import BaseModel
+""" testing city """
 import unittest
+import pep8
+from models.city import City
 
+class City_testing(unittest.TestCase):
+    """ check BaseModel """
 
-class test_City(unittest.TestCase):
-    """
-        test for city class
-    """
-    @classmethod
-    def setUpClass(cls):
-        """
-            setup
-        """
-        cls.dummy_city = City()
-        cls.dummy_city.name = "test"
-        cls.dummy_city.state_id = State().id
-
-    @classmethod
-    def tearDownClass(cls):
-        """
-            tear down
-        """
-        del cls.dummy_city
-
-    def test_inheritance(self):
-        """
-            test proper inheritance
-        """
-        self.assertIsInstance(self.dummy_city, BaseModel)
-        self.assertTrue(hasattr(self.dummy_city, "id"))
-        self.assertTrue(hasattr(self.dummy_city, "created_at"))
-        self.assertTrue(hasattr(self.dummy_city, "updated_at"))
-
-    def test_attrs(self):
-        """
-            test attributes
-        """
-        self.assertTrue(hasattr(self.dummy_city, "name"))
-        self.assertTrue(hasattr(self.dummy_city, "state_id"))
-
-if __name__ == "__main__":
-    unittest.main()
+    def testpep8(self):
+        """ testing codestyle """
+        pepstylecode = pep8.StyleGuide(quiet=True)
+        path_user = 'models/city.py'
+        result = pepstylecode.check_files([path_user])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")

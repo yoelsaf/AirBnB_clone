@@ -1,17 +1,27 @@
-*{
-        box-sizing: border-box;
+html, body {
+    height: 100%;
 }
+
 body {
-        box-sizing: border-box;
-        height: 0%;
-        margin: 0%;
-        padding:0%;
-        color:  #484848;
-        font-size: 14px;
-        font-family: Circular,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
 }
+
 .container {
-        max-width: 1000px;
-        margin: 30px auto;
-        min-height: 75vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    position: relative;
+    flex: 1 0 auto;
+}
+
+p {
+    text-align: center;
+    vertical-align: middle;
 }
